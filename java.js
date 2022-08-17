@@ -22,7 +22,6 @@ console.log(militarytostandard(h)+":"+mino(m)+":"+mono(s))
 
 function increment() {
 clock.innerHTML = (militarytostandard(h)+":"+mino(m)+":"+mono(s)) 
-  const liveclock ='${militarytostandard(h)}:${mino(m)}:${$+mono(s)}'
 }
 
 console.log(militarytostandard(h));
@@ -31,6 +30,8 @@ function militarytostandard(military) {
     return 12
   } else if (h > 12) {
     return h - 12
+  } else if (h < 12) {
+    return "0"+ h
   } else {
     return h 
   }
