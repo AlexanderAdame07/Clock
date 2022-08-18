@@ -28,7 +28,6 @@ function Time(st){
   if (st<10){
     return"0"+st}
   }
-
 function mono(ma){
   if (s<10){
     return "0"+s
