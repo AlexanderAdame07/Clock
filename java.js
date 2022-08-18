@@ -20,8 +20,11 @@ function militarytostandard(military) {
     else if (h > 12) {
     return h - 12
     } 
-   else {
+   else if  (h < 10) {
     return "0" + h 
+    }
+    else {
+      return h
     }
   }
 function Time(st){
