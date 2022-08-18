@@ -93,6 +93,5 @@ function months(index) {
     ];
     return months [index];
 }
-
 setInterval (ticky, 100);
 ticky();
